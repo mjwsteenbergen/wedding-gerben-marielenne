@@ -1,0 +1,28 @@
+li:first-child {
+    border-top: none;
+}
+
+li:last-child {
+    border-bottom: none;
+    padding-bottom: 30px;
+}
+
+li {
+    list-style: none;
+    font-size: 20px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-bottom: 1px solid lightgrey;
+    margin-right: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+ul.itemList {
+    overflow: scroll;
+    height: 53vh;
+    margin-top: 3vh;
+    margin-bottom: 0;
+}
