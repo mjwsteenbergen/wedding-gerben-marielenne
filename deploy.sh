@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 yarn build
 cd ../mjwsteenbergen.github.io/
