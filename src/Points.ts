@@ -727,8 +727,8 @@ export function getFirstLocation(): WLocation {
             latitude: 0,
             longitude: 0
         },
-        description: "Welcome to your present! This website will guide you through a lot of fun memories. Go to the points on the map and have fun!",
-        title: "Introduction",
+        description: "Welcome to your present! This website will be your guide to bike a very nice route around Breda.\nEvery point will have a secret that will unlock itself when you get to that point (make sure that you allow the website to use your location)\nOnce you have looked at this secret press the (x) at the top to close. Good luck, have fun and congratulations on your marriage",
+        title: "Click me!",
         link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     }
 }
