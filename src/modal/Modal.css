@@ -1,5 +1,5 @@
-button:focus {
-    outline: none;
+:root {
+    --headerheight: 4em;
 }
 
 .modal {
@@ -8,14 +8,10 @@ button:focus {
     bottom: 0;
     height: 66vh;
     background-color: white;
-    border-top-right-radius: 8%;
-    border-top-left-radius: 8%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
     width: 100%;
     transition: transform 0.5s;
-}
-
-h1 {
-    flex-grow: 1;
 }
 
 .modalclose {
@@ -25,7 +21,7 @@ h1 {
 }
 
 .modal2 { /*peek*/
-    transform: translate(0px, 56vh);
+    transform: translate(0px, calc(66vh - var(--headerheight)));
 }
 
 .modal2intro {
@@ -46,35 +42,6 @@ h1 {
     animation-iteration-count: 1;
 }
 
-.modaltop {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 10vh;
-    margin-right: 0;
-}
-
-.modal-link-container {
-    margin: 20px;
-    width: 80%;
-    text-align: center;
-    text-decoration: none;
-    background: grey;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    font-weight: 200;
-}
-
-.modal-link {
-    text-decoration: none;
-}
-
-.modal > * {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 @keyframes modal0animation{
     0% {
         transform:  translate(0px,66vh)  ;
@@ -89,6 +56,75 @@ h1 {
         transform:  translate(0px,66vh)  ;
     }
     100% {
-        transform:  translate(0px,56vh)  ;
+        transform:  translate(0px, calc(66vh - var(--headerheight)));
     }
+}
+
+.modaltop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* height: var(--headerheight); */
+    margin-right: 0;
+}
+
+.modaltop h1 {
+    margin-bottom: 0.3em;
+}
+
+.modal > * {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* ## Cards ## */
+
+.modal-item-wrapper {
+    display: flex;  
+    flex-direction: column;
+    height: calc(66vh - var(--headerheight));
+}
+
+.modal-link {
+    text-decoration: none;
+    /* height: 400px; */
+    flex-basis: content;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    font-weight: 200;
+    background: grey;
+    margin-bottom: 1em;
+}
+
+.modal-desc {
+    white-space: break-spaces;
+    overflow-y: auto;
+    margin-top: 0;
+    flex-shrink: 20;
+}
+
+@media(min-width: 700px)
+{
+    .modal {
+        right: 0px;
+        max-width: 500px;
+    }  
+
+    .modal > * {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media(min-width: 1000px)
+{
+    .modal {
+        right: 50px;
+    }   
 }

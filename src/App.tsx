@@ -14,10 +14,10 @@ export default class App extends React.Component<{}, { map?: Map, newLocations: 
     var w = window.outerWidth;
     var h = window.innerHeight;    
     var locs = (this.state?.newLocations || []).map(i => <WModal key={i.id} title={i.title + " 🎉"} modalState={ModalState.Peek}>
-      <p>{i.description}</p>
-      <a className="modal-link" href={i.link} target="blank">
-        <p className="modal-link-container">Open secret</p>
-      </a>
+        <p className="modal-desc" dangerouslySetInnerHTML={{ __html: i.description }}></p>
+        <a className="modal-link" href={i.link} target="blank">
+          <p className="modal-link-container">Open secret</p>
+        </a>
     </WModal>)
     return [
       //|| 
@@ -72,6 +72,8 @@ export default class App extends React.Component<{}, { map?: Map, newLocations: 
     this.setState({
       map: map,
       confettiEnabled: false
+    }, () => {
+        this.addRouteToMap(map);
     });
 
     var visited = getVisitedLocations();
@@ -117,14 +119,6 @@ export default class App extends React.Component<{}, { map?: Map, newLocations: 
       }
     });
 
-    if (visited.length === 0) {
-      this.addToLocalStorage(getFirstLocation());
-      this.setState({
-        newLocations: (this.state?.newLocations || []).concat(getFirstLocation())
-      })
-      this.turnOnConfetti();
-    }
-
     this.state.currentLocation?.setLngLat([position.coords.longitude, position.coords.latitude]);
   }
 
@@ -136,7 +130,6 @@ export default class App extends React.Component<{}, { map?: Map, newLocations: 
         try {
           if(this.state.map !== undefined) {
             this.setMapSettings(this.state.map, position);
-            this.addRouteToMap(this.state.map);
           }
           this.onPositionUpdate(position);          
         } catch(e) {
@@ -151,6 +144,15 @@ export default class App extends React.Component<{}, { map?: Map, newLocations: 
       }, {
         enableHighAccuracy: true
       })
+    }
+
+    var visited = getVisitedLocations();
+    if (visited.length === 0) {
+      this.addToLocalStorage(getFirstLocation());
+      this.setState({
+        newLocations: (this.state?.newLocations || []).concat(getFirstLocation())
+      })
+      this.turnOnConfetti();
     }
   }
 

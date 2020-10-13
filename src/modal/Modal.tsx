@@ -6,10 +6,14 @@ export enum ModalState {
     Open, Hidden, Peek
 }
 
-export class WModal extends React.Component<{ modalState?: ModalState; title: string; hideClose?: boolean;}, { modalState: ModalState; }> {
+export class WModal extends React.Component<{ modalState?: ModalState; title: string; hideClose?: boolean }, { modalState: ModalState; headerHeight: string}> {
     state = {
-        modalState: this.props.modalState || ModalState.Open
+        modalState: this.props.modalState || ModalState.Open,
+        headerHeight: "var(--headerheight)"
     }
+
+    headerElement?: HTMLDivElement | null;
+
 
     render() {
         // let cName: string = "element-animation"
@@ -20,20 +24,35 @@ export class WModal extends React.Component<{ modalState?: ModalState; title: st
         var closeButton = null;
         if(this.state.modalState !== ModalState.Peek && !this.props.hideClose)
         {
-            closeButton = <img onClick={() => this.setState({modalState: ModalState.Hidden})} src={logo} className="modalclose" alt="logo" />;
+            closeButton = <img onClick={(e) => {this.setState({modalState: ModalState.Hidden})
+            e.bubbles = false;
+            e.stopPropagation();
+        }} src={logo} className="modalclose" alt="logo" />;
         }
+
 
         return (
             <div className={cName} style={{
                 zIndex: this.props.modalState === ModalState.Open ? 100 : 50
             }}>
-                <div className='modaltop'>
-                    <h1 onClick={() => this.setState({modalState: this.state.modalState === ModalState.Open ? ModalState.Peek : ModalState.Open})}>{this.props.title}</h1>
+                <div ref={i => this.headerElement = i} className='modaltop' onClick={() => this.setState({ modalState: this.state.modalState === ModalState.Open ? ModalState.Peek : ModalState.Open })}>
+                    <h1>{this.props.title}</h1>
                     {closeButton}
                 </div>
-                {this.props.children}
+                <div className="modal-item-wrapper" style={{
+                    height: "calc(66vh - " +  this.state.headerHeight + ")"
+                }}>
+                    {this.props.children}
+                </div>
             </div>
         );
+    }
+
+    componentDidMount() {
+        this.setState({
+            headerHeight: this.headerElement?.clientHeight + "px"
+        });
+        this.forceUpdate();
     }
 
 
