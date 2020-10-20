@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-yarn build
+# yarn build
 cd ../mjwsteenbergen.github.io/
 rm -r gerbenmarielenne/
 cp -r ../wedding-gerben-marielenne/build ./gerbenmarielenne/

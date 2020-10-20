@@ -9,6 +9,7 @@ export class WLocation {
     description!: string;
     coordinates!: Coords;
     link!: string;
+    imageLink?: string;
 }
 
 // {
@@ -31,16 +32,7 @@ export class WLocation {
 //             },
 //     link: "https://nntn.nl"
 // },
-// {
-//     id: "temp-ah",
-//         title: "Albert Heijn",
-//             description: "Its an Albert Heijn. Gotta debug somehow",
-//                 coordinates: {
-//         latitude: 51.9966037,
-//             longitude: 4.3508977
-//     },
-//     link: "https://nntn.nl"
-// }
+
 
 export function getLocations(): WLocation[] {
     return [
@@ -52,7 +44,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.610239,
                 longitude: 4.791088,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-91",
@@ -62,7 +55,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.629087,
                 longitude: 4.838759,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-2",
@@ -72,7 +66,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.642524,
                 longitude: 4.851408,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-4",
@@ -82,7 +77,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.639249,
                 longitude: 4.87617,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-87",
@@ -92,17 +88,19 @@ export function getLocations(): WLocation[] {
                 latitude: 51.656784,
                 longitude: 4.862427,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-1",
             title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            description: "Derek en Luke",
             coordinates: {
                 latitude: 51.676249,
                 longitude: 4.865101,
             },
-            link: ""
+            link: "https://youtu.be/W02BJDfha28",
+            imageLink: ""
         },
         {
             id: "location-29",
@@ -112,7 +110,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.665229,
                 longitude: 4.93125,
             },
-            link: ""
+            link: "",
+            imageLink: "gerbenmarielenne/img/hester-pieter.gif"
         },
         {
             id: "location-28",
@@ -122,7 +121,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.65727,
                 longitude: 4.934658,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-5",
@@ -132,7 +132,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.646998,
                 longitude: 4.929589,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-3",
@@ -142,27 +143,30 @@ export function getLocations(): WLocation[] {
                 latitude: 51.631251,
                 longitude: 4.911146,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-30",
             title: "Maak de limerick af!",
-            description: "Verzamel de zinnen door de route heen... en onthoud wat je hebt gezien!",
+            description: "Verzamel de zinnen door de route heen... en onthoud wat je hebt gezien! (Je kunt ook de vorige foto zien in de lijst met geopende locaties)",
             coordinates: {
                 latitude: 51.626449,
                 longitude: 4.913882,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-52",
             title: "Zeilthema (nog een leuke titel verzinnen)",
-            description: "",
+            description: "In een explosief interview met Roos worden de grote geheimen onthuld.",
             coordinates: {
                 latitude: 51.60745,
                 longitude: 4.917798,
             },
-            link: ""
+            link: "https://youtu.be/9RgOXEuXXSI",
+            imageLink: ""
         },
         {
             id: "location-40",
@@ -172,17 +176,19 @@ export function getLocations(): WLocation[] {
                 latitude: 51.600171,
                 longitude: 4.894667,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-88",
             title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            description: "Hester en Dennis",
             coordinates: {
                 latitude: 51.593455,
                 longitude: 4.86109,
             },
-            link: ""
+            link: "https://youtu.be/3OfnWX5i1MU",
+            imageLink: ""
         },
         {
             id: "location-87-dubbel",
@@ -192,17 +198,19 @@ export function getLocations(): WLocation[] {
                 latitude: 51.586824,
                 longitude: 4.8564,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-86",
             title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            description: "Kirsten",
             coordinates: {
                 latitude: 51.57739,
                 longitude: 4.842077,
             },
-            link: ""
+            link: "https://youtu.be/tYlfQSuUVO4",
+            imageLink: ""
         },
         {
             id: "location-85",
@@ -212,17 +220,19 @@ export function getLocations(): WLocation[] {
                 latitude: 51.572457,
                 longitude: 4.826822,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-81",
             title: "Maak de limerick af!",
-            description: "Verzamel de zinnen door de route heen... en onthoud wat je hebt gezien!",
+            description: "Maak de limerick compleet met de voorgaande zinnen.",
             coordinates: {
                 latitude: 51.587241,
                 longitude: 4.786334,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "location-80",
@@ -232,17 +242,19 @@ export function getLocations(): WLocation[] {
                 latitude: 51.59292,
                 longitude: 4.787877,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "debug-1",
             title: "Leiden Centraal",
-            description: "",
+            description: "Station Leiden Centraal is het grootste spoorwegstation in de Nederlandse stad Leiden, provincie Zuid-Holland. Leiden heeft daarnaast twee andere spoorwegstations: aan de zuidoostelijke kant van de stad ligt station Leiden Lammenschans en aan de zuidwestelijke kant, op de grens van de gemeenten Leiden en Voorschoten, ligt station De Vink.",
             coordinates: {
                 latitude: 52.165458,
                 longitude: 4.4801473,
             },
-            link: ""
+            link: "https://nl.wikipedia.org/wiki/Station_Leiden_Centraal",
+            imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ErfgoedLeiden_LEI001013300_Station_Leiden%2C_Stationsplein_1.jpg/260px-ErfgoedLeiden_LEI001013300_Station_Leiden%2C_Stationsplein_1.jpg"
         },
         {
             id: "debug-2",
@@ -252,17 +264,19 @@ export function getLocations(): WLocation[] {
                 latitude: 52.1215568,
                 longitude: 4.6550943,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "debug-3",
             title: "Rotterdam Alexander station",
-            description: "Chill on the couch table nyan fluffness ahh cucumber! run in circles meow meow mama cat meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog or lick left leg for ninety minutes, still dirty. Chew on cable sleep on keyboard, yet ask to be pet then attack owners hand. Good morning sunshine let me in let me out let me in let me out let me in let me out who broke this door anyway pet my belly, you know you want to; seize the hand and shred it!, for if it smells like fish eat as much as you wish for have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat lick the plastic bag yet murr i hate humans they are so annoying. Intently sniff hand destroy the blinds for sweet beast. Grab pompom in mouth and put in water dish you call this cat food or lick the curtain just to be annoying or eat all the power cords ignore the human until she needs to get up, then climb on her lap and sprawl. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked as lick i the shoes. This cat happen now, it was too purr-fect!!! annoy the old grumpy cat, start a fight and then retreat to wash when i lose, i bet my nine lives on you-oooo-ooo-hooo hit you unexpectedly chew iPad power cord, and nyan fluffness ahh cucumber!. Meow all night having their mate disturbing sleeping humans trip owner up in kitchen i want food yet run around the house at 4 in the morning cat mojo cat fur is the new black yet kitty scratches couch bad kitty. Sniff all the things snuggles up to shoulders or knees and purrs you to sleep ooh, are those your $250 dollar sandals? lemme use that as my litter box i vomit in the bed in the middle of the night and asdflkjaertvlkjasntvkjn (sits on keyboard) for cough hairball, eat toilet paper. Pounce on unsuspecting person spill litter box, scratch at owner, destroy all furniture, especially couch fish i must find my red catnip fishy fish plop down in the middle where everybody walks. 𝕄𝔼𝕆𝕎 lick butt and make a weird face sit in a box for hours yet eat and than sleep on your face man running from cops stops to pet cats, goes to jail so eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Hide head under blanket so no one can see look at dog hiiiiiisssss sleep everywhere, but not in my bed yet try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard but in the middle of the night i crawl onto your chest and purr gently to help you sleep. Grass smells good scratch the box dream about hunting birds. Purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table curl into a furry donut touch my tail, i shred your hand purrrr. Kick up litter crash against wall but walk away like nothing happened and disappear for four days and return home with an expensive injury; bite the vet, yet find empty spot in cupboard and sleep all day yet use lap as chair, yet pet my belly, you know you want to; seize the hand and shred it! yowling nonstop the whole night.\n\nDamn that dog . Leave fur on owners clothes dismember a mouse and then regurgitate parts of it on the family room floor for purr purr purr until owner pets why owner not pet me hiss scratch meow i will ruin the couch with my claws bleghbleghvomit my furball really tie the room together. Cat snacks. Sleep everywhere, but not in my bed meow for food, then when human fills food dish, take a few bites of food and continue meowing thug cat but see brother cat receive pets, attack out of jealousy, but eat grass, throw it back up yet dead stare with ears cocked. Pretend not to be evil. No, you can't close the door, i haven't decided whether or not i wanna go out scream at teh bath. Cat ass trophy stare at ceiling, so knock dish off table head butt cant eat out of my own dish, yet meow all night having their mate disturbing sleeping humans funny little cat chirrup noise shaking upright tail when standing next to you be superior. Touch my tail, i shred your hand purrrr make it to the carpet before i vomit mmmmmm yet annoy the old grumpy cat, start a fight and then retreat to wash when i lose or ask to be pet then attack owners hand.\n\nGroom forever, stretch tongue and leave it slightly out, blep open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow! run at 3am or when in doubt, wash so cats woo but check cat door for ambush 10 times before coming in. Attack dog, run away and pretend to be victim sleep everywhere, but not in my bed and intently sniff hand. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr eat muffins and poutine until owner comes back for hide when guests come over, yet litter box is life. You have cat to be kitten me right meow cats are a queer kind of folk so cry louder at reflection curl up and sleep on the freshly laundered towels or lick butt and make a weird face scratch me there, elevator butt. Leave fur on owners clothes cat dog hate mouse eat string barf pillow no baths hate everything for spend all night ensuring people don't sleep sleep all day. Bring your owner a dead bird bite plants so miaow then turn around and show you my bum flee in terror at cucumber discovered on floor for roll on the floor purring your whiskers off. Hunt by meowing loudly at 5am next to human slave food dispenser please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside cat sit like bread or ptracy, for eat grass, throw it back up shake treat bag. Fat baby cat best buddy little guy sugar, my siamese, stalks me (in a good way), day and night yet and sometimes switches in french and say 'miaou' just because well why not or stare at guinea pigs meow in empty rooms russian blue. Kitty scratches couch bad kitty sleep in the bathroom sink toilet paper attack claws fluff everywhere meow miao french ciao litterbox flex claws on the human's belly and purr like a lawnmower. I shredded your linens for you cat cat moo moo lick ears lick paws or jump off balcony, onto stranger's head stick butt in face, but eat the rubberband. Ignore the squirrels, you'll never catch them anyway scratch the postman wake up lick paw wake up owner meow meow and mrow for i am the best. Stare at owner accusingly then wink. My water bowl is clean and freshly replenished, so i'll drink from the toilet good morning sunshine tuxedo cats always looking dapper yet shove bum in owner's face like camera lens my slave human didn't give me any food so i pooped on the floor. Going to catch the red dot today going to catch the red dot today jump up to edge of bath, fall in then scramble in a mad panic to get out pushes butt to face. Hit you unexpectedly.\n\nJump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans throw down all the stuff in the kitchen for fall asleep upside-down and scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food or meow meow we are 3 small kittens sleeping most of our time, we are around 15 weeks old i think, i don’t know i can’t count. Lick master's hand at first then bite because im moody cat gets stuck in tree firefighters try to get cat down firefighters get stuck in tree cat eats firefighters' slippers yet eat plants, meow, and throw up because i ate plants. Howl on top of tall thing i'm going to lap some water out of my master's cup meow be superior and soft kitty warm kitty little ball of furr. Under the bed cough furball into food bowl then scratch owner for a new one but catch eat throw up catch eat throw up bad birds. Knock dish off table head butt cant eat out of my own dish spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Run up and down stairs. Stand in doorway, unwilling to chose whether to stay in or go out refuse to leave cardboard box groom forever, stretch tongue and leave it slightly out, blep poop in the plant pot. Sitting in a box disappear for four days and return home with an expensive injury; bite the vet sleeps on my head. Poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls fooled again thinking the dog likes me. Claws in your leg meowing non stop for food. Experiences short bursts of poo-phoria after going to the loo small kitty warm kitty little balls of fur munch, munch, chomp, chomp and i like cats because they are fat and fluffy eat fish on floor but nya nya nyan under the bed.\n\n",
+            description: "Ik had even wat text nodig: Chill on the couch table nyan fluffness ahh cucumber! run in circles meow meow mama cat meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog or lick left leg for ninety minutes, still dirty. Chew on cable sleep on keyboard, yet ask to be pet then attack owners hand. Good morning sunshine let me in let me out let me in let me out let me in let me out who broke this door anyway pet my belly, you know you want to; seize the hand and shred it!, for if it smells like fish eat as much as you wish for have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat lick the plastic bag yet murr i hate humans they are so annoying. Intently sniff hand destroy the blinds for sweet beast. Grab pompom in mouth and put in water dish you call this cat food or lick the curtain just to be annoying or eat all the power cords ignore the human until she needs to get up, then climb on her lap and sprawl. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked as lick i the shoes. This cat happen now, it was too purr-fect!!! annoy the old grumpy cat, start a fight and then retreat to wash when i lose, i bet my nine lives on you-oooo-ooo-hooo hit you unexpectedly chew iPad power cord, and nyan fluffness ahh cucumber!. Meow all night having their mate disturbing sleeping humans trip owner up in kitchen i want food yet run around the house at 4 in the morning cat mojo cat fur is the new black yet kitty scratches couch bad kitty. Sniff all the things snuggles up to shoulders or knees and purrs you to sleep ooh, are those your $250 dollar sandals? lemme use that as my litter box i vomit in the bed in the middle of the night and asdflkjaertvlkjasntvkjn (sits on keyboard) for cough hairball, eat toilet paper. Pounce on unsuspecting person spill litter box, scratch at owner, destroy all furniture, especially couch fish i must find my red catnip fishy fish plop down in the middle where everybody walks. 𝕄𝔼𝕆𝕎 lick butt and make a weird face sit in a box for hours yet eat and than sleep on your face man running from cops stops to pet cats, goes to jail so eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Hide head under blanket so no one can see look at dog hiiiiiisssss sleep everywhere, but not in my bed yet try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard but in the middle of the night i crawl onto your chest and purr gently to help you sleep. Grass smells good scratch the box dream about hunting birds. Purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table curl into a furry donut touch my tail, i shred your hand purrrr. Kick up litter crash against wall but walk away like nothing happened and disappear for four days and return home with an expensive injury; bite the vet, yet find empty spot in cupboard and sleep all day yet use lap as chair, yet pet my belly, you know you want to; seize the hand and shred it! yowling nonstop the whole night.\n\nDamn that dog . Leave fur on owners clothes dismember a mouse and then regurgitate parts of it on the family room floor for purr purr purr until owner pets why owner not pet me hiss scratch meow i will ruin the couch with my claws bleghbleghvomit my furball really tie the room together. Cat snacks. Sleep everywhere, but not in my bed meow for food, then when human fills food dish, take a few bites of food and continue meowing thug cat but see brother cat receive pets, attack out of jealousy, but eat grass, throw it back up yet dead stare with ears cocked. Pretend not to be evil. No, you can't close the door, i haven't decided whether or not i wanna go out scream at teh bath. Cat ass trophy stare at ceiling, so knock dish off table head butt cant eat out of my own dish, yet meow all night having their mate disturbing sleeping humans funny little cat chirrup noise shaking upright tail when standing next to you be superior. Touch my tail, i shred your hand purrrr make it to the carpet before i vomit mmmmmm yet annoy the old grumpy cat, start a fight and then retreat to wash when i lose or ask to be pet then attack owners hand.\n\nGroom forever, stretch tongue and leave it slightly out, blep open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow! run at 3am or when in doubt, wash so cats woo but check cat door for ambush 10 times before coming in. Attack dog, run away and pretend to be victim sleep everywhere, but not in my bed and intently sniff hand. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr eat muffins and poutine until owner comes back for hide when guests come over, yet litter box is life. You have cat to be kitten me right meow cats are a queer kind of folk so cry louder at reflection curl up and sleep on the freshly laundered towels or lick butt and make a weird face scratch me there, elevator butt. Leave fur on owners clothes cat dog hate mouse eat string barf pillow no baths hate everything for spend all night ensuring people don't sleep sleep all day. Bring your owner a dead bird bite plants so miaow then turn around and show you my bum flee in terror at cucumber discovered on floor for roll on the floor purring your whiskers off. Hunt by meowing loudly at 5am next to human slave food dispenser please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside cat sit like bread or ptracy, for eat grass, throw it back up shake treat bag. Fat baby cat best buddy little guy sugar, my siamese, stalks me (in a good way), day and night yet and sometimes switches in french and say 'miaou' just because well why not or stare at guinea pigs meow in empty rooms russian blue. Kitty scratches couch bad kitty sleep in the bathroom sink toilet paper attack claws fluff everywhere meow miao french ciao litterbox flex claws on the human's belly and purr like a lawnmower. I shredded your linens for you cat cat moo moo lick ears lick paws or jump off balcony, onto stranger's head stick butt in face, but eat the rubberband. Ignore the squirrels, you'll never catch them anyway scratch the postman wake up lick paw wake up owner meow meow and mrow for i am the best. Stare at owner accusingly then wink. My water bowl is clean and freshly replenished, so i'll drink from the toilet good morning sunshine tuxedo cats always looking dapper yet shove bum in owner's face like camera lens my slave human didn't give me any food so i pooped on the floor. Going to catch the red dot today going to catch the red dot today jump up to edge of bath, fall in then scramble in a mad panic to get out pushes butt to face. Hit you unexpectedly.\n\nJump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans throw down all the stuff in the kitchen for fall asleep upside-down and scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food or meow meow we are 3 small kittens sleeping most of our time, we are around 15 weeks old i think, i don’t know i can’t count. Lick master's hand at first then bite because im moody cat gets stuck in tree firefighters try to get cat down firefighters get stuck in tree cat eats firefighters' slippers yet eat plants, meow, and throw up because i ate plants. Howl on top of tall thing i'm going to lap some water out of my master's cup meow be superior and soft kitty warm kitty little ball of furr. Under the bed cough furball into food bowl then scratch owner for a new one but catch eat throw up catch eat throw up bad birds. Knock dish off table head butt cant eat out of my own dish spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Run up and down stairs. Stand in doorway, unwilling to chose whether to stay in or go out refuse to leave cardboard box groom forever, stretch tongue and leave it slightly out, blep poop in the plant pot. Sitting in a box disappear for four days and return home with an expensive injury; bite the vet sleeps on my head. Poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls fooled again thinking the dog likes me. Claws in your leg meowing non stop for food. Experiences short bursts of poo-phoria after going to the loo small kitty warm kitty little balls of fur munch, munch, chomp, chomp and i like cats because they are fat and fluffy eat fish on floor but nya nya nyan under the bed.\n\n",
             coordinates: {
                 latitude: 51.9521386,
                 longitude: 4.5494486,
             },
-            link: ""
+            link: "",
+            imageLink: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.totalntertainment.com%2Fwp-content%2Fuploads%2FRick-Astley.jpg&f=1&nofb=1"
         },
         {
             id: "debug-4",
@@ -272,7 +286,8 @@ export function getLocations(): WLocation[] {
                 latitude: 52.0167875,
                 longitude: 4.7050806,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
         {
             id: "debug-5",
@@ -282,7 +297,8 @@ export function getLocations(): WLocation[] {
                 latitude: 51.9215083,
                 longitude: 4.5317793,
             },
-            link: ""
+            link: "",
+            imageLink: ""
         },
     ]
 }
@@ -727,8 +743,8 @@ export function getFirstLocation(): WLocation {
             latitude: 0,
             longitude: 0
         },
-        description: "Lieve Gerben en Marielenne,\n\nDeze website zal jullie guide zijn voor een leuke fietsroute rond Breda.\nElk punt dat op de kaart staat zal een geheim bevatten die je alleen kan openen als je bij het punt bent (zorg ervoor dat deze pagina je locatie mag gebruiken).\nAls je een geheim gelezen hebt, kan je op de (❌) rechts bovenin om hem te sluiten. Veel succes, plezier en gefeliciteerd met het huwelijk!",
+        description: "Lief bruidspaar, \n\nDit cadeau is een beetje anders dan anders. We wilden graag iets voor jullie verzinnen, wat leuk is om te krijgen, én leuk is om te doen.\nDaarom sturen we jullie op een verrassingsfietstocht! \n\nIn de fietstassen zitten een aantal ingepakte cadeautjes, deze mogen jullie nu al uitpakken. Sommige cadeautje zullen handig zijn om mee te nemen voor onderweg, anderen zijn gewoon voor de leuk 😀. \nDe tasjes die in de fietstassen zitten, mogen jullie nog niet openmaken. Deze moeten in de fietstassen blijven en gaan met jullie mee op avontuur. \n\n<b>Hoe werkt het?</b>\n\nJullie mogen zelf een mooie dag uitkiezen waarop jullie zin hebben een stuk te gaan fietsen. Bevestig de fietstassen op je fiets (met daarin in ieder geval de genummerde tasjes) en maak natuurlijk even een foto. Deze website zal jullie guide zijn voor een leuke fietsroute rond Breda. De knooppunten die jullie gaan volgen zijn: 78, 91, 02, 04, 87, 01, 29, 28, 05, 03, 30, 52, 40, 88, 87, 86, 85, 81, 80. Als je op de open secret knop onderin drukt, opent hij Google Maps naar de eerste locatie.\n\nOp de website kan je de rest van de route zien die jullie vandaag gaan fietsen. Elk punt dat op de kaart staat zal een geheim bevatten die je alleen kan openen als je bij het punt bent (zorg ervoor dat deze pagina je locatie mag gebruiken).\nAls je een geheim gelezen hebt, kan je op de (❌) rechts bovenin klikken om hem te sluiten.\n\n<b>Een aantal aandachtspuntjes van tevoren:</b>\n - Zorg dat je telefoon opgeladen is en dat je voldoende internet hebt;\n - Zet je locatievoorziening op je telefoon aan;\n - Neem voor de zekerheid een opgeladen powerbank (+kabeltje) mee;\n - Vertrek op tijd – jullie hebben ongeveer 3,5 uur nodig voor de fietstocht zelf, met stops ongeveer 4,5 uur. \n\nVeel succes, plezier en gefeliciteerd met jullie huwelijk!\n\nLiefs, \n\nDe neefjes & nichtjes \n",
         title: "Click me!",
-        link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+        link: "https://www.google.com/maps/dir//51.6103228,4.7899855/@51.6102839,4.789439,18z"
     }
 }

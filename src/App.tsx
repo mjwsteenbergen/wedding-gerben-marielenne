@@ -13,12 +13,7 @@ export default class App extends React.Component<{}, { map?: Map, newLocations: 
   render() {
     var w = window.outerWidth;
     var h = window.innerHeight;    
-    var locs = (this.state?.newLocations || []).map(i => <WModal key={i.id} title={i.title + " 🎉"} modalState={ModalState.Peek}>
-        <p className="modal-desc" dangerouslySetInnerHTML={{ __html: i.description }}></p>
-        <a className="modal-link" href={i.link} target="blank">
-          <p className="modal-link-container">Open secret</p>
-        </a>
-    </WModal>)
+    var locs = (this.state?.newLocations || []).map(i => WModal.CreateModalFromWLocation(i, true))
     return [
       //|| 
       <Confetti

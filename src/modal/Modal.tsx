@@ -1,6 +1,7 @@
 import React from 'react';
 import './Modal.css'
 import logo from './close-circle-outline.svg';
+import { WLocation } from '../Points';
 
 export enum ModalState {
     Open, Hidden, Peek
@@ -60,5 +61,27 @@ export class WModal extends React.Component<{ modalState?: ModalState; title: st
         var modal = document.getElementById("modal");
         modal?.classList.remove("element-animation");
         modal?.classList.add("element-animation-reverse");
+    }
+
+    static CreateModalFromWLocation(location: WLocation, isnew: boolean)
+    {
+        var link = null;
+        if (location.link !== "" && location.link !== null) {
+            link = <a className="modal-link" href={location.link} target="blank">
+                <p className="modal-link-container">Open secret</p>
+            </a>;
+        }
+
+        var image = null;
+        if (location.imageLink !== null && location.imageLink !== undefined && location.imageLink !== "") {
+            image = <img className="modal-desc-image" src={location.imageLink} alt={location.id}></img>
+        }
+        return <WModal key={Date.now()} title={location.title + (isnew ? "🎉" : "")} modalState={ModalState.Open}>
+            <div className="modal-desc">
+                {image}
+                <p dangerouslySetInnerHTML={{ __html: location.description }}></p>
+            </div>
+            {link}
+        </WModal>
     }
 }

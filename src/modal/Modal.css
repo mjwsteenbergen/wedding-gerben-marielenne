@@ -107,6 +107,11 @@
     overflow-y: auto;
     margin-top: 0;
     flex-shrink: 20;
+    max-width: 100%;
+}
+
+.modal-desc-image {
+    max-width: inherit;
 }
 
 @media(min-width: 700px)

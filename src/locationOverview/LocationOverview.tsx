@@ -1,7 +1,7 @@
 import React from "react";
 import { Map } from 'mapbox-gl';
 import { ModalState, WModal } from "../modal/Modal";
-import { getExistingLocations, getLocations, purgeLocations, WLocation } from "../Points";
+import { getExistingLocations, getLocations, purgeLocations } from "../Points";
 import './LocationOverview.css'
 import App from "../App";
 
@@ -24,12 +24,8 @@ export class LocationOverview extends React.Component<{ map?: Map, debugThing: A
                     offset: this.getOffset()
                 }, [location.coordinates.longitude, location.coordinates.latitude]);
             }
-            this.modals.push(<WModal key={Date.now()} title={location.title} modalState={ModalState.Open}>
-                    <p className="modal-desc" dangerouslySetInnerHTML={{ __html: location.description }}></p>
-                    <a className="modal-link" href={location.link} target="blank">
-                        <p className="modal-link-container">Open secret</p>
-                    </a>
-            </WModal>);
+
+            this.modals.push(WModal.CreateModalFromWLocation(location, false));
             this.forceUpdate();
         }
         }>{location.title}</li>).concat([this.getDebug()])
