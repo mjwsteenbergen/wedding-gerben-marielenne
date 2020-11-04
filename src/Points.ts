@@ -111,7 +111,7 @@ export function getLocations(): WLocation[] {
                 longitude: 4.93125,
             },
             link: "",
-            imageLink: "gerbenmarielenne/img/hester-pieter.gif"
+            imageLink: "/gerbenmarielenne/img/hester-pieter.gif"
         },
         {
             id: "location-28",
