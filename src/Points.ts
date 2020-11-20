@@ -39,7 +39,7 @@ export function getLocations(): WLocation[] {
         {
             id: "location-78",
             title: "Alles klaar, fietsen maar!",
-            description: "",
+            description: "Het gaat nu echt beginnen, heel veel succes en plezier! ",
             coordinates: {
                 latitude: 51.610239,
                 longitude: 4.791088,
@@ -50,18 +50,18 @@ export function getLocations(): WLocation[] {
         {
             id: "location-91",
             title: "Terug naar het begin...",
-            description: "",
+            description: "Jullie reis begon afzonderlijk, maar samen is toch leuker!",
             coordinates: {
                 latitude: 51.629087,
                 longitude: 4.838759,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/ynotboth.jpg"
         },
         {
             id: "location-2",
-            title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            title: "Een persoonlijke boodschap van Joris",
+            description: "",
             coordinates: {
                 latitude: 51.642524,
                 longitude: 4.851408,
@@ -71,30 +71,19 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-4",
-            title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            title: "Een persoonlijke boodschap van Niko",
+            description: "",
             coordinates: {
                 latitude: 51.639249,
                 longitude: 4.87617,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/InzendingNiko.jpg"
         },
         {
             id: "location-87",
-            title: "Tijd voor een spelletje!",
-            description: "Wie van jullie kan het beter",
-            coordinates: {
-                latitude: 51.656784,
-                longitude: 4.862427,
-            },
-            link: "",
-            imageLink: ""
-        },
-        {
-            id: "location-1",
-            title: "Een persoonlijke boodschap",
-            description: "Derek en Luke",
+            title: "Een persoonlijke boodschap van Derek en Luke",
+            description: "Ook aan de andere kant van de zee juichen mensen jullie huwelijk toe",
             coordinates: {
                 latitude: 51.676249,
                 longitude: 4.865101,
@@ -103,31 +92,42 @@ export function getLocations(): WLocation[] {
             imageLink: ""
         },
         {
+            id: "location-1",
+            title: "Tijd voor een spelletje!",
+            description: "Pak uit de fietstas het zakje met de 1 er op.",
+            coordinates: {
+                latitude: 51.656784,
+                longitude: 4.862427,
+            },
+            link: "",
+            imageLink: ""
+        },
+        {
             id: "location-29",
-            title: "Maak de limerick af!",
+            title: "Maak de limerick af (deel I)!",
             description: "Verzamel de zinnen door de route heen... en onthoud wat je hebt gezien!",
             coordinates: {
                 latitude: 51.665229,
                 longitude: 4.93125,
             },
             link: "",
-            imageLink: "/gerbenmarielenne/img/hester-pieter.gif"
+            imageLink: "/gerbenmarielenne/img/picture-karen-charlot.jpeg"
         },
         {
             id: "location-28",
-            title: "QUIZTIME!",
-            description: "Pak uit de fietstasje het zakje met de 1 er op.",
+            title: "Een reis met de wind in je rug",
+            description: "Tijdens een gedeelde passie sloeg de vonk over.",
             coordinates: {
                 latitude: 51.65727,
                 longitude: 4.934658,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/pixlr_20201119194304812.jpg"
         },
         {
             id: "location-5",
-            title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            title: "Een persoonlijke boodschap van Merel en Mike",
+            description: "Jullie stadsgenoten testen jullie kennis van ons Breda! (voor oefenmateriaal, kijk: youtube - Draadstaal Cursus Brabants)",
             coordinates: {
                 latitude: 51.646998,
                 longitude: 4.929589,
@@ -137,19 +137,19 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-3",
-            title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            title: "Maak de limerick af (deel II)!",
+            description: "Verzamel de zinnen door de route heen... en onthoud wat je hebt gezien! (Je kunt ook de vorige foto zien in de lijst met geopende locaties)",
             coordinates: {
                 latitude: 51.631251,
                 longitude: 4.911146,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/inzending-HenP.jpg"
         },
         {
             id: "location-30",
-            title: "Maak de limerick af!",
-            description: "Verzamel de zinnen door de route heen... en onthoud wat je hebt gezien! (Je kunt ook de vorige foto zien in de lijst met geopende locaties)",
+            title: "Tijd voor een quiz!",
+            description: "Pak uit de fietstas het zakje met de 2 er op.",
             coordinates: {
                 latitude: 51.626449,
                 longitude: 4.913882,
@@ -159,7 +159,7 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-52",
-            title: "Zeilthema (nog een leuke titel verzinnen)",
+            title: "Een persoonlijke boodschap van Roos",
             description: "In een explosief interview met Roos worden de grote geheimen onthuld.",
             coordinates: {
                 latitude: 51.60745,
@@ -170,8 +170,8 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-40",
-            title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            title: "Een persoonlijke boodschap van Martijn",
+            description: "",
             coordinates: {
                 latitude: 51.600171,
                 longitude: 4.894667,
@@ -181,8 +181,8 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-88",
-            title: "Een persoonlijke boodschap",
-            description: "Hester en Dennis",
+            title: "Een persoonlijke boodschap van Hester en Dennis",
+            description: "Een stille boodschap van een mede-bruidspaar. ",
             coordinates: {
                 latitude: 51.593455,
                 longitude: 4.86109,
@@ -192,19 +192,19 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-87-dubbel",
-            title: "Een moment van bezinning",
-            description: "",
+            title: "Moment van bezinning ",
+            description: "Pak er lekker een drankje bij (waarschijnlijk water) en droom even terug naar deze prachtige reis samen.",
             coordinates: {
                 latitude: 51.586824,
                 longitude: 4.8564,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/2016-2-1 Cambodja.JPG"
         },
         {
             id: "location-86",
-            title: "Een persoonlijke boodschap",
-            description: "Kirsten",
+            title: "Een persoonlijke boodschap van Kirsten",
+            description: "Een internationale proost op het bruidspaar.",
             coordinates: {
                 latitude: 51.57739,
                 longitude: 4.842077,
@@ -214,91 +214,36 @@ export function getLocations(): WLocation[] {
         },
         {
             id: "location-85",
-            title: "Een persoonlijke boodschap",
-            description: "maar van wie?",
+            title: "Is er al met eten gegooid?",
+            description: "We hopen dat jullie tot nu toe de reis hebben kunnen volbrengen zonder eten in elkaars gezicht te gooien, je weet maar nooit wanneer dit bij jullie gebeurt! ",
             coordinates: {
                 latitude: 51.572457,
                 longitude: 4.826822,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/pixlr_20201119194807821-taart.jpg"
         },
         {
             id: "location-81",
-            title: "Maak de limerick af!",
+            title: "Maak de limerick af (deel III)!",
             description: "Maak de limerick compleet met de voorgaande zinnen.",
             coordinates: {
                 latitude: 51.587241,
                 longitude: 4.786334,
             },
             link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/picture-gerben-ring.jpeg"
         },
         {
             id: "location-80",
-            title: "THE END ",
-            description: "",
+            title: "The end.",
+            description: "Jullie hebben de hele verrassingsfietstocht doorlopen. We hopen dat jullie genoten hebben van alle persoonlijke berichtjes en verhalen en dat jullie met veel plezier terug kunnen kijken op deze reis. We wensen jullie alle liefde en geluk in de wereld toe. Op een heel lang en gelukkig huwelijk!",
             coordinates: {
                 latitude: 51.59292,
                 longitude: 4.787877,
             },
             link: "",
-            imageLink: ""
-        },
-        {
-            id: "debug-1",
-            title: "Leiden Centraal",
-            description: "Station Leiden Centraal is het grootste spoorwegstation in de Nederlandse stad Leiden, provincie Zuid-Holland. Leiden heeft daarnaast twee andere spoorwegstations: aan de zuidoostelijke kant van de stad ligt station Leiden Lammenschans en aan de zuidwestelijke kant, op de grens van de gemeenten Leiden en Voorschoten, ligt station De Vink.",
-            coordinates: {
-                latitude: 52.165458,
-                longitude: 4.4801473,
-            },
-            link: "https://nl.wikipedia.org/wiki/Station_Leiden_Centraal",
-            imageLink: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/ErfgoedLeiden_LEI001013300_Station_Leiden%2C_Stationsplein_1.jpg/260px-ErfgoedLeiden_LEI001013300_Station_Leiden%2C_Stationsplein_1.jpg"
-        },
-        {
-            id: "debug-2",
-            title: "Alphen Huis",
-            description: "",
-            coordinates: {
-                latitude: 52.1215568,
-                longitude: 4.6550943,
-            },
-            link: "",
-            imageLink: ""
-        },
-        {
-            id: "debug-3",
-            title: "Rotterdam Alexander station",
-            description: "Ik had even wat text nodig: Chill on the couch table nyan fluffness ahh cucumber! run in circles meow meow mama cat meoooow i iz master of hoomaan, not hoomaan master of i, oooh damn dat dog or lick left leg for ninety minutes, still dirty. Chew on cable sleep on keyboard, yet ask to be pet then attack owners hand. Good morning sunshine let me in let me out let me in let me out let me in let me out who broke this door anyway pet my belly, you know you want to; seize the hand and shred it!, for if it smells like fish eat as much as you wish for have a lot of grump in yourself because you can't forget to be grumpy and not be like king grumpy cat lick the plastic bag yet murr i hate humans they are so annoying. Intently sniff hand destroy the blinds for sweet beast. Grab pompom in mouth and put in water dish you call this cat food or lick the curtain just to be annoying or eat all the power cords ignore the human until she needs to get up, then climb on her lap and sprawl. Groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked as lick i the shoes. This cat happen now, it was too purr-fect!!! annoy the old grumpy cat, start a fight and then retreat to wash when i lose, i bet my nine lives on you-oooo-ooo-hooo hit you unexpectedly chew iPad power cord, and nyan fluffness ahh cucumber!. Meow all night having their mate disturbing sleeping humans trip owner up in kitchen i want food yet run around the house at 4 in the morning cat mojo cat fur is the new black yet kitty scratches couch bad kitty. Sniff all the things snuggles up to shoulders or knees and purrs you to sleep ooh, are those your $250 dollar sandals? lemme use that as my litter box i vomit in the bed in the middle of the night and asdflkjaertvlkjasntvkjn (sits on keyboard) for cough hairball, eat toilet paper. Pounce on unsuspecting person spill litter box, scratch at owner, destroy all furniture, especially couch fish i must find my red catnip fishy fish plop down in the middle where everybody walks. 𝕄𝔼𝕆𝕎 lick butt and make a weird face sit in a box for hours yet eat and than sleep on your face man running from cops stops to pet cats, goes to jail so eat prawns daintily with a claw then lick paws clean wash down prawns with a lap of carnation milk then retire to the warmest spot on the couch to claw at the fabric before taking a catnap. Hide head under blanket so no one can see look at dog hiiiiiisssss sleep everywhere, but not in my bed yet try to hold own back foot to clean it but foot reflexively kicks you in face, go into a rage and bite own foot, hard but in the middle of the night i crawl onto your chest and purr gently to help you sleep. Grass smells good scratch the box dream about hunting birds. Purr as loud as possible, be the most annoying cat that you can, and, knock everything off the table curl into a furry donut touch my tail, i shred your hand purrrr. Kick up litter crash against wall but walk away like nothing happened and disappear for four days and return home with an expensive injury; bite the vet, yet find empty spot in cupboard and sleep all day yet use lap as chair, yet pet my belly, you know you want to; seize the hand and shred it! yowling nonstop the whole night.\n\nDamn that dog . Leave fur on owners clothes dismember a mouse and then regurgitate parts of it on the family room floor for purr purr purr until owner pets why owner not pet me hiss scratch meow i will ruin the couch with my claws bleghbleghvomit my furball really tie the room together. Cat snacks. Sleep everywhere, but not in my bed meow for food, then when human fills food dish, take a few bites of food and continue meowing thug cat but see brother cat receive pets, attack out of jealousy, but eat grass, throw it back up yet dead stare with ears cocked. Pretend not to be evil. No, you can't close the door, i haven't decided whether or not i wanna go out scream at teh bath. Cat ass trophy stare at ceiling, so knock dish off table head butt cant eat out of my own dish, yet meow all night having their mate disturbing sleeping humans funny little cat chirrup noise shaking upright tail when standing next to you be superior. Touch my tail, i shred your hand purrrr make it to the carpet before i vomit mmmmmm yet annoy the old grumpy cat, start a fight and then retreat to wash when i lose or ask to be pet then attack owners hand.\n\nGroom forever, stretch tongue and leave it slightly out, blep open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow! run at 3am or when in doubt, wash so cats woo but check cat door for ambush 10 times before coming in. Attack dog, run away and pretend to be victim sleep everywhere, but not in my bed and intently sniff hand. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr eat muffins and poutine until owner comes back for hide when guests come over, yet litter box is life. You have cat to be kitten me right meow cats are a queer kind of folk so cry louder at reflection curl up and sleep on the freshly laundered towels or lick butt and make a weird face scratch me there, elevator butt. Leave fur on owners clothes cat dog hate mouse eat string barf pillow no baths hate everything for spend all night ensuring people don't sleep sleep all day. Bring your owner a dead bird bite plants so miaow then turn around and show you my bum flee in terror at cucumber discovered on floor for roll on the floor purring your whiskers off. Hunt by meowing loudly at 5am next to human slave food dispenser please let me outside pouty face yay! wait, it's cold out please let me inside pouty face oh, thank you rub against mommy's leg oh it looks so nice out, please let me outside again the neighbor cat was mean to me please let me back inside cat sit like bread or ptracy, for eat grass, throw it back up shake treat bag. Fat baby cat best buddy little guy sugar, my siamese, stalks me (in a good way), day and night yet and sometimes switches in french and say 'miaou' just because well why not or stare at guinea pigs meow in empty rooms russian blue. Kitty scratches couch bad kitty sleep in the bathroom sink toilet paper attack claws fluff everywhere meow miao french ciao litterbox flex claws on the human's belly and purr like a lawnmower. I shredded your linens for you cat cat moo moo lick ears lick paws or jump off balcony, onto stranger's head stick butt in face, but eat the rubberband. Ignore the squirrels, you'll never catch them anyway scratch the postman wake up lick paw wake up owner meow meow and mrow for i am the best. Stare at owner accusingly then wink. My water bowl is clean and freshly replenished, so i'll drink from the toilet good morning sunshine tuxedo cats always looking dapper yet shove bum in owner's face like camera lens my slave human didn't give me any food so i pooped on the floor. Going to catch the red dot today going to catch the red dot today jump up to edge of bath, fall in then scramble in a mad panic to get out pushes butt to face. Hit you unexpectedly.\n\nJump on human and sleep on her all night long be long in the bed, purr in the morning and then give a bite to every human around for not waking up request food, purr loud scratch the walls, the floor, the windows, the humans throw down all the stuff in the kitchen for fall asleep upside-down and scratch at fleas, meow until belly rubs, hide behind curtain when vacuum cleaner is on scratch strangers and poo on owners food or meow meow we are 3 small kittens sleeping most of our time, we are around 15 weeks old i think, i don’t know i can’t count. Lick master's hand at first then bite because im moody cat gets stuck in tree firefighters try to get cat down firefighters get stuck in tree cat eats firefighters' slippers yet eat plants, meow, and throw up because i ate plants. Howl on top of tall thing i'm going to lap some water out of my master's cup meow be superior and soft kitty warm kitty little ball of furr. Under the bed cough furball into food bowl then scratch owner for a new one but catch eat throw up catch eat throw up bad birds. Knock dish off table head butt cant eat out of my own dish spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Run up and down stairs. Stand in doorway, unwilling to chose whether to stay in or go out refuse to leave cardboard box groom forever, stretch tongue and leave it slightly out, blep poop in the plant pot. Sitting in a box disappear for four days and return home with an expensive injury; bite the vet sleeps on my head. Poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls fooled again thinking the dog likes me. Claws in your leg meowing non stop for food. Experiences short bursts of poo-phoria after going to the loo small kitty warm kitty little balls of fur munch, munch, chomp, chomp and i like cats because they are fat and fluffy eat fish on floor but nya nya nyan under the bed.\n\n",
-            coordinates: {
-                latitude: 51.9521386,
-                longitude: 4.5494486,
-            },
-            link: "",
-            imageLink: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.totalntertainment.com%2Fwp-content%2Fuploads%2FRick-Astley.jpg&f=1&nofb=1"
-        },
-        {
-            id: "debug-4",
-            title: "Gouda station",
-            description: "",
-            coordinates: {
-                latitude: 52.0167875,
-                longitude: 4.7050806,
-            },
-            link: "",
-            imageLink: ""
-        },
-        {
-            id: "debug-5",
-            title: "Kralingse Zoom, Rotterdam",
-            description: "",
-            coordinates: {
-                latitude: 51.9215083,
-                longitude: 4.5317793,
-            },
-            link: "",
-            imageLink: ""
+            imageLink: "/gerbenmarielenne/img/IMG-20201115-WA0007.jpg"
         },
     ]
 }
