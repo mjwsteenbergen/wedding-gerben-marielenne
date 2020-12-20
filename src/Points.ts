@@ -66,7 +66,7 @@ export function getLocations(): WLocation[] {
                 latitude: 51.642524,
                 longitude: 4.851408,
             },
-            link: "",
+            link: "https://youtu.be/j-IjM2LzOT4",
             imageLink: ""
         },
         {
@@ -132,7 +132,7 @@ export function getLocations(): WLocation[] {
                 latitude: 51.646998,
                 longitude: 4.929589,
             },
-            link: "",
+            link: "https://youtu.be/K19jK3o74Vo",
             imageLink: ""
         },
         {
@@ -171,13 +171,13 @@ export function getLocations(): WLocation[] {
         {
             id: "location-40",
             title: "Een persoonlijke boodschap van Martijn",
-            description: "",
+            description: "Super gefeliciteerd met jullie huwelijk!",
             coordinates: {
                 latitude: 51.600171,
                 longitude: 4.894667,
             },
-            link: "",
-            imageLink: ""
+            link: "https://youtu.be/FrCP0NoZtoQ",
+            imageLink: "/gerbenmarielenne/img/gm-nerding-out.jpg"
         },
         {
             id: "location-88",
